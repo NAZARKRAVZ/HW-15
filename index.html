@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .holder{
+        max-width: 300px;
+        max-height: 100px;
+        border: 2px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        border-top-left-radius: 15px; 
+        border-top-right-radius: 15px;
+      }
+
+    .item:nth-child(1){
+        width: 150px;
+       height: 50px;
+        box-sizing: border-box;
+        background-color: red;
+       order: 1;
+       border-top-left-radius: 15px; 
+      
+      
+   }
+   .item:nth-child(5){
+    width: 150px;
+     height: 50px;
+     box-sizing: border-box;
+     background-color: orange;
+     order: 2;
+     border-top-right-radius: 15px;
+ 
+  }
+ 
+   .item:nth-child(2){
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    order: 4;
+
+  }
+  .item:nth-child(3){
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: purple;
+    order: 3;
+  
+  } 
+  .item:nth-child(4){
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+   background-color: green;
+    order: 5;
+ 
+  }
+
+  .item{
+        box-sizing: border-box;
+        width: 100px;
+        height: 50px;
+        display: flex; /* Додаємо display: flex; для центрування вмісту */
+        align-items: center; /* Центруємо по вертикалі */
+        justify-content: center; /* Центруємо по горизонталі */
+      }
+  
+
+    </style>
+  </head>
+  <body>
+    <div class="holder">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      </div>
+  </body>
+</html>
